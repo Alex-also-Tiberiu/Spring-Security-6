@@ -1,5 +1,10 @@
 # ------------------------------------------------------------------------------------------
-logging.config: ./logback-spring.xml
+logging:
+  config: ./logback-spring.xml
+  level:
+    org.springframework: INFO
+    org.apache.http: INFO
+    com.panda.security: INFO
 # ------------------------------------------------------------------------------------------
 spring:
   datasource:
